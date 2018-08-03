@@ -1,1 +1,16 @@
 /*Input Your Custom CSS Here*/
+.logo {
+    padding: 10px 0;
+}
+
+.logo img {
+    max-height: 10vh;
+}
+
+.slider-text p {
+    font-size: 3vh;
+}
+
+.project-sec {
+    background-color: #f2f2f2;
+}

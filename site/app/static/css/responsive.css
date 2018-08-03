@@ -1,0 +1,338 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.main-menu ul li a{padding:30px 18px}
+.list {
+  padding: 0 121px;
+}
+.feature-intro .single-intro {
+  padding: 50px 12px;
+}
+.all-testimonial .owl-controls {
+  top: 50%;
+}
+.all-testimonial .owl-controls .owl-next {
+  right: -55px;
+}
+.all-testimonial .owl-controls .owl-prev {
+  left: -55px;
+}
+.all-patner .owl-controls {
+  top: 26%;
+}
+.all-patner .owl-controls .owl-next {
+  right: -22px;
+}
+.all-patner .owl-controls .owl-prev {
+  left: -22px;
+}
+.sngl-client {
+  margin:10px;
+}
+.special-service-sec .inner:nth-child(3n+1) {
+  clear: both;
+}
+.sec-title {
+  margin: 0 100px 60px;
+}
+.slider-text {
+  padding: 0 55px;
+}
+
+}
+@media only screen and (max-width: 767px) {
+.bannar-text {
+  width: 100%;
+}	
+.list {
+  padding: 0 60px;
+}
+.logo {
+  padding-bottom: 0;
+  text-align: center;
+}
+.sec-title {
+  margin: 0 0 60px;
+}
+.counting_sl {
+  margin: 40px 0;
+}
+.pricing-sec .inner-item {
+  padding: 15px;
+  margin: 10px 0;
+}
+.faq-sec {
+  background: rgba(0, 0, 0, 0) -moz-linear-gradient(right center , #2a2d33 100%, #33373f 100%) repeat scroll 0 0;
+}
+.faq-img {
+  float: none;
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+}
+.special-service-sec .inner:nth-child(2n+1) {
+  clear: both;
+}
+.all-testimonial .owl-controls {
+  top: 50%;
+}
+.all-testimonial .owl-controls .owl-next {
+  right: -8px;
+}
+.all-testimonial .owl-controls .owl-prev {
+  left: -8px;
+}
+.single-testimonial {
+  margin: 54px;
+}
+.all-patner .owl-controls {
+  top: 30%;
+}
+.all-patner .owl-controls .owl-next {
+  right: -22px;
+}
+.all-patner .owl-controls .owl-prev {
+  left: -22px;
+}
+.client-comment li a {
+  margin: 0 2px;
+}
+.footer-sec .col-md-3.col-sm-6 {
+  margin-bottom: 25px;
+  width: 100%;
+  display: inline-block;
+}	
+.domain-feature {
+  margin: 20px 0;
+}
+.optimize-sec {
+  background: rgba(0, 0, 0, 0) -moz-linear-gradient(right center , #33373f 50%, #33373f 100%) repeat scroll 0 0;
+}
+.faq-img {
+  margin-top: 50px;
+}	
+.slider-text {
+  padding: 0 55px;
+}
+.about img {
+  margin-bottom: 30px;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.list {
+  padding: 0 60px;
+}
+.logo {
+  padding-bottom: 0;
+  text-align: center;
+}
+.sec-title {
+  margin: 0 0 60px;
+}
+.counting_sl {
+  margin: 40px 0;
+}
+.pricing-sec .inner-item {
+  padding: 15px;
+  margin: 10px 0;
+}
+.faq-sec {
+  background: rgba(0, 0, 0, 0) -moz-linear-gradient(right center , #2a2d33 100%, #33373f 100%) repeat scroll 0 0;
+}
+.faq-img {
+  float: none;
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+}
+.special-service-sec .inner:nth-child(2n+1) {
+  clear: both;
+}
+.all-testimonial .owl-controls {
+  top: 50%;
+}
+.all-testimonial .owl-controls .owl-next {
+  right: -22px;
+}
+.all-testimonial .owl-controls .owl-prev {
+  left: -22px;
+}
+.all-patner .owl-controls {
+  top: 30%;
+}
+.all-patner .owl-controls .owl-next {
+  right: -22px;
+}
+.all-patner .owl-controls .owl-prev {
+  left: -22px;
+}
+.client-comment li a {
+  margin: 0 2px;
+}
+.footer-sec .col-md-3.col-sm-6 {
+  margin-bottom: 25px;
+}
+.domain-feature {
+  margin: 20px 0;
+}
+.contact-person {
+  padding: 0px 15px;
+}
+.table-dsc table th, .table-dsc table td {
+  padding: 25px 14px;
+}
+.domin-search-sec input[type="text"] {
+  width: 450px;
+}
+.optimize-sec {
+  background: rgba(0, 0, 0, 0) -moz-linear-gradient(right center , #33373f 50%, #33373f 100%) repeat scroll 0 0;
+}
+.faq-img {
+  margin-top: 50px;
+}
+.slider-text {
+  padding: 0 55px;
+}
+.all-slide .single-slide {
+  background-size: 100% 100%;
+}
+.about img {
+  margin-bottom: 30px;
+}
+.slider-text p {
+  padding: 0 0px;
+}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 470px) {
+.hd-lft li::before{display:none}	
+.hd-lft li{padding:0px 6px}
+.hd-lft li i {
+  margin-right: 4px;
+}
+.hd-sec .container {
+  padding: 0;
+}
+.slider-text {
+  padding: 0;
+}
+.slider-text p {
+  color: #fff;
+  padding: 0 100px;
+}
+.slider-text li:last-child a {
+  margin-top: 15px;
+}
+.all-slide .owl-item {
+  height: 600px;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+.hd-lft {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.hd-rgt {
+  float: none;
+  text-align: center;
+}
+.hd-sec {
+  display: inline-block;
+  width: 100%;padding:14px 0
+}
+.logo {
+  padding: 28px 0;
+}
+.mean-container .mean-nav ul li a i {
+  display: none;
+}
+.contact-person {
+  padding: 0px 15px;
+}
+.table-dsc table th, .table-dsc table td {
+  padding: 25px 14px;
+}
+.domin-search-sec input[type="text"] {
+  width: 450px;
+}
+.table-dsc table th, .table-dsc table td {
+  padding: 25px 14px;
+}
+.domin-search-sec input[type="text"] {
+  width: 255px;
+}
+.domin-search-sec li {
+  padding: 20px 10px;
+}
+.slider-text {
+  padding: 0 60px;
+}
+.slider-text h1 {
+  font-size: 20px;
+}
+.slider-text p {
+  padding: 0
+}
+.abt-lft {
+  margin-top: 20px;
+}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 555px) {
+.domin-search-sec input[type="text"] {
+  width: 255px;
+}
+.domin-search-sec input[type="submit"] {
+  margin-top: 30px;
+}
+.optimize-sec {
+  background: rgba(0, 0, 0, 0) -moz-linear-gradient(right center , #33373f 50%, #33373f 100%) repeat scroll 0 0;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+.domin-search-sec li {
+  margin: 0;
+}
+.faq-img {
+  margin-top: 50px;
+}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 380px) {
+.hd-rgt {
+  float: none;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.hd-lft li{padding:5px 0;width:100%}
+.domin-search-sec form {
+  position: relative;
+}
+.domin-search-sec input[type="text"] {
+float: left;
+padding-right: 100px;
+width: 100%;
+border-radius: 7px;
+}
+.domin-search-sec .select-arrow {
+  border-radius: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.domin-search-sec input[type="submit"] {
+  margin-top: 30px;
+}
+
+
+}
+@media only screen and (min-width: 0px) and (max-width: 359px) {
+.single-testimonial {
+  margin: 0px;
+}	
+.client-comment p{padding:0px 54px}	
+}

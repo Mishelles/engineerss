@@ -7,10 +7,32 @@
     max-height: 10vh;
 }
 
+.slider-text {
+    text-align: left;
+    padding: 230px;
+}
+
 .slider-text p {
     font-size: 3vh;
+    padding-left: 0;
+    padding-top: 20px;
+    max-width: 50vw;
+}
+
+.slider-text li a {
+    border-radius: 0;
+    margin: 0;
 }
 
 .project-sec {
-    background-color: #f2f2f2;
+    background-color: #ffff;
+}
+
+.call-to-action-text a.btn {
+    border-radius: 0;
+    border: 1px solid #ffff;
+}
+
+.sec-heading {
+    color: #e8500e;
 }

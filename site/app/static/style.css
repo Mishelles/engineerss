@@ -36,3 +36,120 @@
 .sec-heading {
     color: #e8500e;
 }
+
+input {
+    border-radius: 0 !important;
+}
+
+.call-to-action-sec {
+    text-align: center;
+}
+
+.call-to-action-sec input.btn {
+    background-color: inherit;
+    border: 1px solid #ffff;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.call-to-action-sec input[type='text'] {
+    width: 25vw;
+    text-align: center;
+}
+
+.call-to-action-sec input {
+    height: 6vh;
+    font-weight: bold;
+    font-size: 2vh;
+    /* margin-right: 3vw; */
+}
+
+.call-to-action-sec input[name='email'] {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.links-section {
+    background-color: #494b52;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
+.links-section h2 {
+    color: #ffff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.links-section p {
+    margin-top: 2vh;
+    color: #ffff;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.links-section .fa {
+    color: #e8500e;
+    font-size: 7vh;
+}
+
+.links-section .item-icon {
+    margin-right: 0;
+    padding-right: 0 !important;
+}
+
+.links-section .item-description {
+    margin-left: 0;
+    padding-left: 0 !important;
+}
+
+.links-section a.btn {
+    margin-top: 2vh;
+    width: 100%;
+    color: #ffff;
+    border: 1px solid #e8500e;
+    border-radius: 0;
+    font-size: 2.5vh;
+    margin-top: 4vh;
+}
+
+.links-section a.btn:hover {
+    background-color: #e8500e;
+}
+
+.rounded-panel {
+    border: 1px solid #494b52 !important;
+    border: 1px solid;
+    border-top-left-radius: 0;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+    padding: 10% !important;
+    height: 45vh;
+    margin-bottom: 3vh;
+    padding-top: 2vh;
+}
+
+#panel-1 {
+    background-color: #494b52;
+}
+
+#panel-1 p {
+    color: #ffff;
+}
+
+#panel-1 h2 {
+    color: #e8500e;
+}
+
+#panel-2 {
+    background-color: #e8500e;
+}
+
+#panel-2 p {
+    color: #494b52;
+}
+
+#panel-2 h2 {
+    color: #ffff;
+}

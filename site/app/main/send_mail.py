@@ -5,8 +5,7 @@ from email.mime.text import MIMEText
 
 MAIL_SERVER_DOMAIN = "smtp.yandex.ru"
 MAIL_SERVER_PORT = 587
-FROM_MAIL = "site@baltik-company.ru"
-PASSWORD = "DAHTAJGa#2Z&F5eT"
+
 
 def send_email(to_email, msg_subject, msg_text):
 

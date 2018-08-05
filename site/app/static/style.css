@@ -310,3 +310,8 @@ h1, h2, h3 {
     color: #e8500e;
     border: 1px solid #e8500e;
 }
+
+.slider-text a:hover {
+    background: #ffff !important;
+    color: #e8500e !important;
+}

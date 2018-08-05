@@ -322,7 +322,7 @@ padding: 12px 30px;
 text-transform: uppercase;
 margin: 0px 10px;
 }
-.slider-text li a:hover{background:#000!important;color:#fff;transition: all 0.4s ease 0s;}
+.slider-text li a:hover{background:#ffff!important;color:#e8500e;transition: all 0.4s ease 0s;}
 .slider-text li:last-child a{background: #e8500e none repeat scroll 0 0;}
 .all-slide .owl-controls {
 position: absolute;

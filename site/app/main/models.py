@@ -33,5 +33,8 @@ class Message(db.Document):
 
     def send(self):
         self.save
-        message_body = 'Имя: %s\nemail: %s\nТелефон: %s\nТема: %s\nСообщение:\n%s' % (self.name, self.email, self.phone, self.topic, self.text)
-        send_email("sergeenkov.michael@gmail.com", "Новое сообщение с сайта engineerss.ru", message_body)
+        try:
+            message_body = 'Имя: %s\nemail: %s\nТелефон: %s\nТема: %s\nСообщение:\n%s' % (self.name, self.email, self.phone, self.topic, self.text)
+            send_email("sergeenkov.michael@gmail.com", "Новое сообщение с сайта engineerss.ru", message_body)
+        except Exception as e:
+            print(e)

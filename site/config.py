@@ -6,7 +6,7 @@ app_name = "app"
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'ftftfiub958fjg6vrtgitfjkthgfo8w496b6r9r6b76'
-    MONGODB_DB = 'aim_high'
+    MONGODB_DB = 'engineerss'
     MONGODB_HOST = '127.0.0.1'
     MONGODB_PORT = 27017
 

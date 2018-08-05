@@ -35,11 +35,6 @@
     background-color: #ffff;
 }
 
-.call-to-action-text a.btn {
-    border-radius: 0;
-    border: 1px solid #ffff;
-}
-
 .sec-heading {
     color: #e8500e;
 }
@@ -53,12 +48,25 @@ input {
 }
 
 .call-to-action-sec input.btn {
-    background-color: inherit;
+    border-radius: 0;
     border: 1px solid #ffff;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    background-color: inherit;
+    width: 100%;
 }
 
+.call-to-action-sec input.btn:hover {
+    background-color: #ffff;
+    color: #e8500e;
+    border: 1px solid #e8500e;
+}
+
+.call-to-action-sec .form-control,
+.call-to-action-sec input.btn {
+    height: 6vh;
+    font-size: 3vh;
+}
+
+/*
 .call-to-action-sec input[type='text'] {
     width: 25vw;
     text-align: center;
@@ -68,13 +76,12 @@ input {
     height: 6vh;
     font-weight: bold;
     font-size: 2vh;
-    /* margin-right: 3vw; */
 }
 
 .call-to-action-sec input[name='email'] {
     margin-left: 2vw;
     margin-right: 2vw;
-}
+} */
 
 .links-section {
     background-color: #494b52;
@@ -199,3 +206,71 @@ input {
     background-color: #ffff;
     color: #494b52 !important;
 } */
+
+/* Products */
+.product-heading {
+    padding-top: 6vh;
+    min-height: 30vh;
+    background-color: #032d59;
+}
+.product-heading h1 {
+    font-weight: bolder;
+    font-size: 5vh;
+    color: #ffff;
+}
+
+.product-heading p {
+    color: #ffff;
+}
+
+.product-heading .product-features-col {
+    padding-top: 2vh;
+}
+
+.product-heading .fa, p.killer_feature {
+    font-weight: bolder;
+    font-size: 2vh;
+    padding-right: 1vw;
+}
+
+.product-download {
+    background-color: #eee;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
+.product-download h2 {
+    font-weight: bolder;
+}
+.product-download a.btn {
+    border: 1px solid #494b52;
+    border-radius: 0;
+    width: 100%;
+    word-wrap: break-word;
+    height: auto;
+    white-space: normal;
+}
+
+.product-download a.btn:hover {
+    color: #ffff;
+    border: 0;
+    background-color: #032d59;
+}
+
+.product-description {
+    padding-bottom: 6vh;
+    padding-top: 6vh;
+}
+
+.product-description h2 {
+    margin-top: 2vh;
+    font-weight: bolder;
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 700px) {
+  a.btn, input{
+      margin-bottom: 2vh;
+  }
+}
+/* Products End */

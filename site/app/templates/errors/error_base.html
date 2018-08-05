@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style media="screen">
+    .error_section {
+        padding: 6vh;
+        min-height: 70vh;
+    }
+    .error-section p {
+        text-align: center;
+    }
+    .error-code {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20vh;
+    }
+    .error-message {
+        font-weight: bold;
+        font-size: 5vh;
+        line-height: normal;
+    }
+
+</style>
+<div class="error-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="error-code">{% block error_code %}{% endblock %}</h1>
+                <p class="error-message">{% block error_message %}{% endblock %}</p>
+                {% block extra_content %}{% endblock %}
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" class="embed-responsive" src="https://www.youtube.com/embed/xqqQLzcuuhg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

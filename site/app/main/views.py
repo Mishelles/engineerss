@@ -8,9 +8,25 @@ from .models import *
 def index():
     return render_template("main-page.html")
 
-@main.route("/contact")
+@main.route("/contact", methods=['GET', 'POST'])
 def contact():
-    return render_template("contact-page.html")
+    if request.method == 'GET':
+        return render_template("contact-page.html")
+    elif request.method == 'POST':
+        try:
+            data = request.get_json()
+            message = Message(
+                name=data['user_name'],
+                email=data['user_email'],
+                phone=data['user_phone'],
+                topic=data['user_topic'],
+                text=data['user_mesage']
+            )
+            message.send()
+        except Exception as e:
+            print(e)
+            abort(500)
+        return jsonify({"success": True})    
 
 @main.route("/manufacturers/<string:manufacturer_slug>")
 def show_products(manufacturer_slug):

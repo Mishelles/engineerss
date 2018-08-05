@@ -282,6 +282,15 @@ h1, h2, h3 {
 
 .products-sec .item {
     margin: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1px;
+}
+
+.products-sec .item:hover,
+.products-sec .item:focus {
+    background-color: #e8500e;
+    color: #ffff;
 }
 
 @media (max-width: 700px) {
@@ -295,3 +304,9 @@ h1, h2, h3 {
   }
 }
 /* Products End */
+
+.single-input-fieldsbtn input[type="submit"]:hover {
+    background: #ffff;
+    color: #e8500e;
+    border: 1px solid #e8500e;
+}

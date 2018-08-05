@@ -2,6 +2,7 @@ from .. import db
 # from . import send_mail
 from flask_login import UserMixin
 import datetime
+from .send_mail import send_email
 
 class Manufacturer(db.Document):
     _id = db.SequenceField()
@@ -21,3 +22,16 @@ class Product(db.Document):
     category = db.StringField(default="Без категории")
     # manufacturer = db.ReferenceField(Manufacturer, reverse_delete_rule=db.CASCADE)
     manufacturer_id = db.StringField(default="")
+
+class Message(db.Document):
+    _id = db.SequenceField()
+    name = db.StringField(default="")
+    email = db.StringField(default="")
+    phone = db.StringField(default="")
+    topic = db.StringField(default="")
+    text = db.StringField(default="")
+
+    def send(self):
+        self.save
+        message_body = 'Имя: %s\nemail: %s\nТелефон: %s\nТема: %s\nСообщение:\n%s' % (self.name, self.email, self.phone, self.topic, self.text)
+        send_email("sergeenkov.michael@gmail.com", "Новое сообщение с сайта engineerss.ru", message_body)

@@ -268,9 +268,30 @@ input {
     margin-bottom: 2vh;
 }
 
+.products-sec {
+    padding-top: 6vh;
+}
+
+.products-sec h1 {
+    margin: 2vh;
+}
+
+h1, h2, h3 {
+    font-weight: bolder;
+}
+
+.products-sec .item {
+    margin: 3vh;
+}
+
 @media (max-width: 700px) {
   a.btn, input{
       margin-bottom: 2vh;
+  }
+
+  .products-sec .item {
+      padding-bottom: 2vh;
+      border-bottom: 1px solid #494b52;
   }
 }
 /* Products End */

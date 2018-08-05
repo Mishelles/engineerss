@@ -12,7 +12,19 @@ def index():
 def contact():
     return render_template("contact-page.html")
 
-@main.route("/products/<string:product_id>")
+@main.route("/manufacturers/<string:manufacturer_slug>")
+def show_products(manufacturer_slug):
+    try:
+        manufacturer = Manufacturer.objects(slug=manufacturer_slug).first()
+        if not manufacturer:
+            abort(404)
+        products = Product.objects(manufacturer_id=str(manufacturer._id))
+        return render_template('products-page.html', manufacturer=manufacturer, products=products)
+    except Exception as e:
+        print(e)
+        abort(500)
+
+@main.route("/products/<int:product_id>")
 def product_detail(product_id):
     product = Product.objects(_id=product_id).first()
 

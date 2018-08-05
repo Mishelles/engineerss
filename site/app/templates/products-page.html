@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Products Section Start -->
+<div class="products-sec">
+    <div class="container">
+        <div class="row">
+            <h1>Продукция торговой марки {{ manufacturer.name }}</h1>
+            {% for product in products %}
+            <div class="col-md-4 col-sm-6 inner">
+                <div class="item">
+                    <div class="row">
+                        <a href="/products/{{ product._id }}"><img src="{{ product.image_main_url }}" alt="" /></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul>
+                                <li>Название: <strong>{{ product.name }}</strong></li>
+                                <li>Категория: <strong>{{ product.category }}</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Products Section Start -->
+<!-- Slider Section Start -->
+<div class="slider">
+    <div class="all-slide owl-item">
+        <div class="single-slide" style="background-image:url(/static/img/background-conditioning.jpg);">
+            <div class="slider-overlay" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+            <div class="slider-text">
+                <h1>Затрудняетесь с выбором подходящего оборудования?</h1>
+                <p>Опытные специалисты Engineering Support Systems всегда готовы оказать поддержку!</p>
+                <ul>
+                    <li><a href="">Написать</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Slider Section End -->
+{% endblock %}

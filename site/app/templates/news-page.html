@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Blog Section Start -->
+<div class="blog-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 blog-post" id="posts-container">
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                <div class="sidebar">
+                    <div class="widget-tag">
+                        <h1>Тэги</h1>
+                        <ul>
+                            <li><a href="#" id="filter_tag" tag_id="{{ tag_id }}">Все</a></li>
+                            {% for tag in tags %}
+                                <li><a href="#" id="filter_tag" tag_id="{{ tag_id }}">{{ tag.tag }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-lg-offset-12">
+                <a href="#" id="load-more-news">Загрузить ещё</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-lg-offset-12">
+                <a href="#" id="load-more-news">Загрузить ещё</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog Section End -->
+{% endblock %}
+{% block extra_js %}
+<script src="/static/js/news.js"></script>
+{% endblock %}

@@ -32,9 +32,23 @@ class Message(db.Document):
     text = db.StringField(default="")
 
     def send(self):
-        self.save
+        self.save()
         try:
             message_body = 'Имя: %s\nemail: %s\nТелефон: %s\nТема: %s\nСообщение:\n%s' % (self.name, self.email, self.phone, self.topic, self.text)
             send_email("sergeenkov.michael@gmail.com", "Новое сообщение с сайта engineerss.ru", message_body)
         except Exception as e:
             print(e)
+
+class Post(db.Document):
+    _id = db.SequenceField()
+    title = db.StringField(default="")
+    text = db.StringField(default="")
+    slug = db.StringField(default="")
+    date = db.DateTimeField(default=datetime.datetime.now)
+    category = db.StringField(default="Новости")
+    tags = db.ListField(default=[])
+    image_url = db.StringField(default="")
+
+class Tag(db.Document):
+    _id = db.SequenceField()
+    tag = db.StringField(default="")
